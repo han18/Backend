@@ -28,7 +28,7 @@ const usersSchema = new mongoose.Schema(
     },
     password: {
       type: String,
-      minLength: 8,
+      minLength: 5,
       maxLength: 50,
       required: true,
     },
@@ -61,3 +61,11 @@ usersSchema.pre("save", async function (next) {
 });
 
 export default mongoose.model("User", usersSchema);
+
+// {
+//   "username": "",
+//   "firs_lname": "",
+//   "last_name": "",
+//   "email": "",
+//   "password": ""
+// }
