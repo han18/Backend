@@ -2,8 +2,7 @@ const mongoose = require("mongoose");
 
 const commentSchema = new mongoose.Schema({
   user: {
-    type: mongoose.Schema.Types.ObjectId,
-    ref: "User", // Reference to the User model
+    type: String,
     required: true,
   },
 
@@ -17,3 +16,5 @@ const commentSchema = new mongoose.Schema({
     default: Date.now,
   },
 });
+
+export default mongoose.model("Comment", commentSchema);
