@@ -9,6 +9,7 @@ router.post("/", async (req, res) => {
     const comment = new Comment(req.body);
     await comment.save();
     res.status(201).json(comment);
-  } 
+  } catch (error) {
+    res.status(500).json({ error: error.message });
   }
 });
