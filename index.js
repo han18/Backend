@@ -5,6 +5,7 @@ import { conn } from "./db/conn.js";
 conn();
 import cors from "cors";
 import usersRoutes from "./routes/users.js";
+import commentsRoutes from "./routes/comments.js";
 
 const app = express();
 
@@ -18,6 +19,8 @@ console.log(process.env.ATLAS_URI);
 
 // this connects the route in the router/user.js
 app.use("/api/users", usersRoutes);
+// this connects the route in the router/comments.js
+app.use("/api/users", commentsRoutes);
 
 // main root route
 app.get("/", (req, res) => {
