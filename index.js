@@ -20,7 +20,7 @@ console.log(process.env.ATLAS_URI);
 // this connects the route in the router/user.js
 app.use("/api/users", usersRoutes);
 // this connects the route in the router/comments.js
-app.use("/api/users", commentsRoutes);
+app.use("/api/comments", commentsRoutes);
 
 // main root route
 app.get("/", (req, res) => {
