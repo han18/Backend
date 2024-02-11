@@ -1,5 +1,5 @@
 import { Router } from "express";
-import Comment from "../models/comments.js";
+import Comment from "../models/comment.js";
 
 const router = new Router();
 

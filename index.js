@@ -5,7 +5,7 @@ import { conn } from "./db/conn.js";
 conn();
 import cors from "cors";
 import usersRoutes from "./routes/users.js";
-import commentsRoutes from "./routes/comments.js";
+import commentsRoutes from "./routes/comment.js";
 
 const app = express();
 
