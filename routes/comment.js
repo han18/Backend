@@ -24,6 +24,19 @@ router.get("/", async (req, res) => {
   }
 });
 
+// Get a comment by its ID
+router.get("/:id", async (req, res) => {
+  try {
+    const comment = await Comment.findById(req.params.id).populate(
+      "user",
+      "username"
+    );
+    res.status(200).json(comment);
+  } catch (error) {
+    res.status(500).json({ error: error.message });
+  }
+});
+
 // Updating a comment by ID
 router.put("/:id", async (req, res) => {
   try {
