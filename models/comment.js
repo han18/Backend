@@ -5,7 +5,6 @@ const commentSchema = new mongoose.Schema({
     // creating a relationship with the user for the profile
     type: mongoose.Schema.ObjectId,
     ref: "User",
-    require: true,
   },
   content: {
     type: String,
