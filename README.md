@@ -19,3 +19,7 @@
 this is the front-end repo of the final project this contains the user routes and schema
 
 https://github.com/han18/Frontend.git
+
+# references to create a the comment schema
+
+https://stackoverflow.com/questions/65931572/node-js-mongoose-create-a-blog-post-commenting-system

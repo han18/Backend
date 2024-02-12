@@ -12,10 +12,5 @@ const commentSchema = new mongoose.Schema({
     //     required: true,
   },
 
-  createdAt: {
-    type: Date,
-    default: Date.now,
-  },
-});
 
 export default mongoose.model("Comment", commentSchema);
