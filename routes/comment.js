@@ -17,7 +17,7 @@ router.post("/", async (req, res) => {
 // Get all the comments
 router.get("/", async (req, res) => {
   try {
-    const comments = await Comment.find().populate("user", "username");
+    const comments = await Comment.find().populate("user_id");
     res.status(200).json(comments);
   } catch (error) {
     res.status(500).json({ error: error.message });

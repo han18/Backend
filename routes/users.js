@@ -55,7 +55,6 @@ router.post("/", async (req, res) => {
   }
 });
 
-//Jan 19, 2024
 //PUT: ==== Updates a user and restricting password
 router.put("/:id", async (req, res) => {
   try {
