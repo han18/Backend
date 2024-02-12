@@ -54,7 +54,9 @@ router.delete("/:id", async (req, res) => {
   try {
     const comment = await Comment.findByIdAndDelete(req.params.id);
     res.status(200).json(comment);
-  } catch (error) {}
+  } catch (error) {
+    res.status(500).json({ error: error.message });
+  }
 });
 
 export default router;
