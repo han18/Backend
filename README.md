@@ -4,7 +4,9 @@
 
 1-
 
-# added the following code in the package.json "start": "node index.js", "dev": "nodemon index.js"
+# added the following code in the package.json
+
+"start": "node index.js", "dev": "nodemon index.js"
 
 =======
 
@@ -16,7 +18,7 @@
 
 // most of the code is from class follow along, labs and SBAs
 
-this is the front-end repo of the final project this contains the user routes and schema
+## this is the front-end repo of the final project
 
 https://github.com/han18/Frontend.git
 

@@ -24,7 +24,7 @@ app.use("/api/comments", commentsRoutes);
 
 // main root route
 app.get("/", (req, res) => {
-  res.send("This is the main route. and the backend");
+  res.send("This is the main route. The backend");
 });
 
 app.listen(PORT, () => {
