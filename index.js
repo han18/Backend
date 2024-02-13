@@ -27,6 +27,10 @@ app.get("/", (req, res) => {
   res.send("This is the main route. The backend");
 });
 
+app.get("/info", (req, res) => {
+  res.send("This is the main route. The backend");
+});
+
 app.listen(PORT, () => {
   console.log(`Server at port: ${PORT}`);
 });
