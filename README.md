@@ -1,7 +1,8 @@
 # Project-API git init
 
 <<<<<<< HEAD
-
+## this is the wireframe of the backend
+<img width="865" alt="Screenshot 2024-02-13 at 11 40 53 AM" src="https://github.com/han18/Backend/assets/35694323/8c736609-acb6-4c7d-810d-25f6f35a4525">
 1-
 
 # added the following code in the package.json "start": "node index.js", "dev": "nodemon index.js"
